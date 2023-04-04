@@ -1,4 +1,10 @@
-# Getting Started with Create React App
+# Learn practice react playground
+
+React namų darbų užduočių sprendimai
+
+## **Further default react readme**
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
