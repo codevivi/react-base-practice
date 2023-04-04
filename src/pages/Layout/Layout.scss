@@ -1,0 +1,34 @@
+.page-header {
+  padding: 1rem;
+  margin-bottom: 1em;
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2em;
+    flex-wrap: wrap;
+    list-style: none;
+    li {
+      .link {
+        display: block;
+        font-weight: bold;
+        text-decoration: none;
+        text-transform: uppercase;
+        border: 1px solid aquamarine;
+        padding: 1em 2em;
+        transition: all 0.3s;
+      }
+      .link:hover,
+      .link:focus {
+        color: pink;
+        border-color: pink;
+      }
+    }
+  }
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 1em;
+  margin: auto;
+}
