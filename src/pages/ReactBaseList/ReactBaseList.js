@@ -1,11 +1,11 @@
-import SquareDogs from "../../components/ReactBaseList/SquareDogs/SquareDogs";
+import DogsList from "../../components/ReactBaseList/DogsList";
 import MainTitle from "../../components/reactBase/MainTitle/MainTitle";
 
 export default function ReactBaseList() {
   return (
     <>
       <MainTitle text="React Base List" />
-      <SquareDogs />
+      <DogsList />
     </>
   );
 }
