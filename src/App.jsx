@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./pages/Layout/Layout";
 import NotFound from "./pages/NotFound";
-import ReactBaseTasks from "./pages/ReactBaseTasks/ReactBaseTasks";
+import ReactBaseTasks from "./pages/ReactBase";
 import About from "./pages/About/About";
-import ReactBaseList from "./pages/ReactBaseList/ReactBaseList";
+import ReactBaseList from "./pages/ReactBaseList";
 function App() {
   return (
     <BrowserRouter>
