@@ -1,3 +1,4 @@
+import DogsLetterCount from "../../components/ReactBaseList/DogLetterCount";
 import DogsList from "../../components/ReactBaseList/DogsList";
 import DogsListFiltered from "../../components/ReactBaseList/DogsListFiltered";
 import DogsListMixed from "../../components/ReactBaseList/DogsListMixed";
@@ -12,6 +13,7 @@ export default function ReactBaseList() {
       <DogsListSortedRounded />
       <DogsListMixed />
       <DogsListFiltered />
+      <DogsLetterCount />
     </>
   );
 }
