@@ -1,6 +1,25 @@
-# Learn practice react playground
+# 🪧 Learn practice react playground
 
 React namų darbų užduočių sprendimai
+
+Site published at [https://codevivi.github.io/react-base-practice/](https://codevivi.github.io/react-base-practice/)
+
+### 🏁 Getting started
+
+**Must have [Node.js](https://nodejs.org)** installed
+
+1. Clone the repo
+2. Go into project directory and Install NPM packages
+
+   ```sh
+   npm install
+   ```
+
+3. use application:
+
+   ```sh
+   npm start
+   ```
 
 ## **Further default react readme**
 
