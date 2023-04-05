@@ -1,20 +1,24 @@
-.dogs-list {
-  list-style: none;
+ul.dogs-list,
+ol.dogs-list,
+ul.dogs-list,
+ul.dogs-list {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  list-style: none;
   gap: 1em;
   li {
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    background-color: orange;
-    color: black;
+    margin-bottom: 1em;
     span {
       display: flex;
       align-items: center;
       justify-content: center;
+      background-color: orange;
+      color: black;
     }
   }
 }
