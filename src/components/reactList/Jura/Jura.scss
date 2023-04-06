@@ -1,0 +1,51 @@
+.jura {
+  background-color: #68cee0;
+  padding: 4em;
+  border-radius: 50px;
+  width: 100%;
+  min-width: 1200px;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+
+  ul {
+    list-style: none;
+    width: 100%;
+    margin: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    li {
+      width: 100px;
+      min-width: 100px;
+      height: 50px;
+      min-height: 50px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      &.laivas {
+        background-image: url(../../../assets/cargo-ship.png);
+      }
+      &.valtis {
+        background-image: url(../../../assets/boat.png);
+        position: relative;
+        bottom: -1em;
+      }
+      &.sala {
+        background-image: url(../../../assets/island.png);
+
+        position: relative;
+        bottom: 4em;
+      }
+      &.fish {
+        background-image: url(../../../assets/fish.png);
+        position: relative;
+        bottom: -4em;
+      }
+      span {
+        background-color: rgba(165, 165, 144, 0.747);
+        padding: 0.2em;
+        font-weight: bold;
+      }
+    }
+  }
+}
