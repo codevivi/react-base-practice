@@ -9,7 +9,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout />}>
+        <Route path="/react-base-practice/" element={<Layout />}>
           <Route index element={<About />} />
           <Route path="react-base" element={<ReactBaseTasks />} />
           <Route path="react-base-list" element={<ReactBaseList />} />

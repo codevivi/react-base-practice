@@ -9,23 +9,23 @@ const Layout = () => {
           <nav>
             <ul>
               <li>
-                <Link className="link" to="/">
+                <Link className="link" to="/react-base-practice/">
                   Apie
                 </Link>
               </li>
               <li>
-                <Link className="link" to="/react-base">
+                <Link className="link" to="/react-base-practice/react-base">
                   React Base
                 </Link>
               </li>
 
               <li>
-                <Link className="link" to="/react-base-list">
+                <Link className="link" to="/react-base-practice/react-base-list">
                   React Base List
                 </Link>
               </li>
               <li>
-                <Link className="link" to="/react-list">
+                <Link className="link" to="/react-base-practice/react-list">
                   React List
                 </Link>
               </li>
