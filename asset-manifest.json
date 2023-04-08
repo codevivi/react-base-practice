@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/react-base-practice/static/css/main.ecacefbc.css",
-    "main.js": "/react-base-practice/static/js/main.807cccb0.js",
+    "main.css": "/react-base-practice/static/css/main.f39aa9fe.css",
+    "main.js": "/react-base-practice/static/js/main.3c49f95e.js",
     "static/media/cargo-ship.png": "/react-base-practice/static/media/cargo-ship.5d570b8fa00dcd44ec0b.png",
     "static/media/island.png": "/react-base-practice/static/media/island.784c5f5ad0135e807b57.png",
     "static/media/boat.png": "/react-base-practice/static/media/boat.f3cdd42b2d2787e8d7c6.png",
     "static/media/fish.png": "/react-base-practice/static/media/fish.ff3a982f62c00f2ef4db.png",
     "index.html": "/react-base-practice/index.html",
-    "main.ecacefbc.css.map": "/react-base-practice/static/css/main.ecacefbc.css.map",
-    "main.807cccb0.js.map": "/react-base-practice/static/js/main.807cccb0.js.map"
+    "main.f39aa9fe.css.map": "/react-base-practice/static/css/main.f39aa9fe.css.map",
+    "main.3c49f95e.js.map": "/react-base-practice/static/js/main.3c49f95e.js.map"
   },
   "entrypoints": [
-    "static/css/main.ecacefbc.css",
-    "static/js/main.807cccb0.js"
+    "static/css/main.f39aa9fe.css",
+    "static/js/main.3c49f95e.js"
   ]
 }
