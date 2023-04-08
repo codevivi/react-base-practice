@@ -1,3 +1,26 @@
+.about-page {
+  padding: 0 1em;
+}
 .about-page ol li {
   margin: 1em;
+}
+.expand-title {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  button {
+    // width: 1.5em;
+    // height: 1.5em;
+    font-size: 3em;
+    color: aquamarine;
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-bottom: -0.2em;
+  }
+  button:hover,
+  button:focus {
+    color: pink;
+  }
 }

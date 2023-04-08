@@ -1,6 +1,6 @@
 # 🪧 Learn practice react playground
 
-React namų darbų užduočių sprendimai
+React namų darbų užduočių sprendimai: **React Base, React Base List, React List**
 
 Site published at [https://codevivi.github.io/react-base-practice/](https://codevivi.github.io/react-base-practice/)
 

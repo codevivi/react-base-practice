@@ -5,6 +5,7 @@ import ReactBaseTasks from "./pages/ReactBase";
 import About from "./pages/About/About";
 import ReactBaseList from "./pages/ReactBaseList";
 import ReactList from "./pages/ReactList";
+import ReactState from "./pages/ReactState";
 function App() {
   return (
     <BrowserRouter>
@@ -14,6 +15,7 @@ function App() {
           <Route path="react-base" element={<ReactBaseTasks />} />
           <Route path="react-base-list" element={<ReactBaseList />} />
           <Route path="react-list" element={<ReactList />} />
+          <Route path="react-state" element={<ReactState />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
