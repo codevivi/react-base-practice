@@ -1,1 +1,2 @@
-export default ["šuo", "šunius", "Bobikas", "kudlius", "Šarikas", "avigalvis"];
+const dogs = ["šuo", "šunius", "Bobikas", "kudlius", "Šarikas", "avigalvis"];
+export default dogs;

@@ -5,5 +5,10 @@
   border-radius: 50px;
   ul {
     list-style: none;
+    li {
+      span {
+        font-weight: bold;
+      }
+    }
   }
 }

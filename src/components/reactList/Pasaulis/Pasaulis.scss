@@ -1,0 +1,35 @@
+.pasaulis {
+  background: rgb(5, 124, 53);
+  background: linear-gradient(0deg, #00aeff 0%, #057c35 71%);
+  padding: 4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+  height: 50vw;
+  min-width: 700px;
+  min-height: 700px;
+  border-radius: 50%;
+
+  overflow: hidden;
+  .parts:first-child {
+    border-right: 1px solid white;
+  }
+  .parts {
+    height: 150%;
+    display: flex;
+    padding: 0.5em;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    ul {
+      list-style: none;
+      li {
+        span {
+          font-weight: bold;
+          background-color: rgb(192, 186, 186);
+        }
+      }
+    }
+  }
+}
