@@ -1,5 +1,6 @@
 .button {
   display: block;
+  min-width: 9em;
   margin: 10px;
   padding: 15px 30px;
   background-size: 200% auto;
@@ -31,6 +32,9 @@
   &.grey {
     box-shadow: 0px 0px 14px -7px #c4ccc7;
     background-image: linear-gradient(45deg, rgb(83, 90, 85) 0%, #c3d3c3 51%, #222423 100%);
+  }
+  &.long {
+    width: 100%;
   }
 }
 

@@ -34,6 +34,11 @@ const Layout = () => {
                   React State
                 </Link>
               </li>
+              <li>
+                <Link className="link" to="/react-base-practice/react-state2">
+                  React State #2
+                </Link>
+              </li>
             </ul>
           </nav>
         </div>

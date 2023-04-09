@@ -8,6 +8,7 @@ export default function About() {
   const [showBaseList, setShowBaseList] = useState(false);
   const [showList, setShowList] = useState(false);
   const [showState, setShowState] = useState(false);
+  const [showState2, setShowState2] = useState(false);
 
   return (
     <div className="about-page">
@@ -83,6 +84,27 @@ export default function About() {
             <li>Sukurti aplikaciją, kuri turi mygtukus plus ir minus, bei atvaizduoja skaičių 0. Paspaudus plus mygtuką, skaičius padidėja 1, o paspaudus minus- sumažėja 3</li>
             <li>Sukurti aplikaciją, kuri turi mygtuką add, kurį paspaudus vieną kartą atsiranda mėlynas kvadratas, paspaudus dar kartą- dar vienas ir t.t.</li>
             <li>Sukurti aplikaciją, kuri turi mygtukus add red, add blue ir reset. Paspaudus add red, prisideda raudonas kvadratas, paspaudus add blue - mėlynas ir t.t. Spaudinėjant prisideda vis daygiau kvadratų. Paspaudus reset viskas išsitrina</li>
+          </ol>
+        )}
+      </section>
+      <section>
+        <div className="expand-title">
+          <h2>REACT STATE #2 </h2>
+          <button onClick={() => setShowState2((prev) => !prev)} className="expand-btn">
+            {showState2 ? <MdOutlineExpandLess /> : <MdOutlineExpandMore />}
+          </button>
+        </div>
+        {showState2 && (
+          <ol>
+            <li>
+              Sukurti aplikaciją, atvaizduojančią žalią stačiakampį (laukas) padalinta į tris stulpelius (stačiakampius) ir tris mygtukus “ąžuolas”, “beržas” ir “uosis”. Paspaudus vieną iš mygtukų žaliame kvadrate atsiranda mažesnis kvadratas su medžio pavadinimu viduje. Svarbu, kad visi medžiai
+              žaliame kvadrate būtų suskirstyti į tris stulpelius pagal medžio pavadinimą.
+            </li>
+            <li>
+              Sukurti aplikaciją su vienu mygtuku “pridėti”. Paspaudus mygtuką, atsirastų juodas kvadratas su mygtuku “+” ir skaičiumi 0 viduje. Paspaudus kelis kartus mygtuką pridėti atsirastų keli tokie juodi kvadratai, paspaudus 3 - atsirastų 3 ir t.t. Spaudant mygtuką “+” kiekviename iš juodų
+              kvadratų jų viduje esantis skaičius didėtų vienetu (kiekviename kvadrate atskirai).
+            </li>
+            <li>Sukurti aplikaciją su vienu mygtuku “+” ir pradiniu skaičiumi 0. Paspaudus mygtuką skaičius didėtų vienetu. Panaudoti localStorage ir padaryti taip, kad skaičiavimai kiekvieną kartą perkrovus puslapį prasidėtų ne nuo 0, o nuo prieš tai buvusio skaičiaus</li>
           </ol>
         )}
       </section>

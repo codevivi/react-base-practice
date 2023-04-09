@@ -1,0 +1,33 @@
+.laukas {
+  width: 100%;
+  min-height: 60vh;
+  background: rgb(0, 128, 0);
+  background: linear-gradient(90deg, rgba(0, 128, 0, 1) 33.1%, rgba(40, 142, 48, 1) 33.3%, rgba(0, 128, 0, 1) 33.3%, rgba(0, 128, 0, 1) 66.4%, rgba(40, 142, 48, 1) 66.6%, rgba(0, 128, 0, 1) 66.6%);
+  display: flex;
+  flex-direction: column;
+  .parts {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1px;
+    div {
+      flex: 1;
+      display: flex;
+      flex-wrap: wrap;
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 6em;
+        height: 6em;
+        background-color: rgb(18, 78, 23);
+        border: 1px solid rgb(54, 25, 25);
+      }
+    }
+  }
+
+  .buttons-container {
+    display: flex;
+    width: 100%;
+  }
+}
