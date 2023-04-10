@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, HashRouter, Routes, Route } from "react-router-dom";
 import Layout from "./pages/Layout/Layout";
 import NotFound from "./pages/NotFound";
 import ReactBaseTasks from "./pages/ReactBase";
@@ -10,9 +10,10 @@ import ReactState2 from "./pages/ReactState2";
 import MyLittleFarm from "./pages/MyLittleFarm";
 function App() {
   return (
-    <BrowserRouter>
+    // <BrowserRouter>
+    <HashRouter>
       <Routes>
-        <Route path="/react-base-practice/" element={<Layout />}>
+        <Route path="/" element={<Layout />}>
           <Route index element={<About />} />
           <Route path="react-base" element={<ReactBaseTasks />} />
           <Route path="react-base-list" element={<ReactBaseList />} />
@@ -23,7 +24,8 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
+    // </BrowserRouter>
   );
 }
 
