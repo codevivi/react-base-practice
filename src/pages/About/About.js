@@ -9,6 +9,7 @@ export default function About() {
   const [showList, setShowList] = useState(false);
   const [showState, setShowState] = useState(false);
   const [showState2, setShowState2] = useState(false);
+  const [showState3, setShowState3] = useState(false);
 
   return (
     <div className="about-page">
@@ -105,6 +106,26 @@ export default function About() {
               kvadratų jų viduje esantis skaičius didėtų vienetu (kiekviename kvadrate atskirai).
             </li>
             <li>Sukurti aplikaciją su vienu mygtuku “+” ir pradiniu skaičiumi 0. Paspaudus mygtuką skaičius didėtų vienetu. Panaudoti localStorage ir padaryti taip, kad skaičiavimai kiekvieną kartą perkrovus puslapį prasidėtų ne nuo 0, o nuo prieš tai buvusio skaičiaus</li>
+          </ol>
+        )}
+      </section>
+      <section>
+        <div className="expand-title">
+          <h2>MyLittleFarm </h2>
+          <button onClick={() => setShowState3((prev) => !prev)} className="expand-btn">
+            {showState3 ? <MdOutlineExpandLess /> : <MdOutlineExpandMore />}
+          </button>
+        </div>
+        {showState3 && (
+          <ol>
+            <li>
+              <p>
+                Sukurti tuščią “Ganyklą”. Ją padalinti į dvi dalis su užrašais- Avys ir Karvės. Sukurti mygtuką “į ganyklą”, kurį paspaudus dešinė pusė būtų apgyvendinta avimis, kurias vaizduoja apskritimai, o kairė pusė karvėmis, kurias vaizduoja keturkampiai. Avių ir karvių skaičius rand 5 - 20.
+                Kiekvieno gyvulio viduje yra random identifikacinis numeris: pvz avim A0254787, karvėm K0007898, kur skaičius yra septynženklis rand skaičius. Perkrovus puslapį avių ir karvių skaičius ir jų identifikaciniai numeriai turi nekisti (tik patį pirmą kartą “Ganykla” turi būti tuščia).
+                Paspaudus ant avies arba karvės ji turi perbėgti į priešingą ganyklos pusę (antrą kartą paspaudus grįžti atgal). Perkrovus puslapį perbėgimai turi išlikti nepakitę. Pakartotinai paspaudus “į ganyklą”, turi atsirasti nauji gyvuliai, kaip ir pirmą kartą.
+              </p>
+              <p>Pastaba: karvė avių ganyklos pusėje lieka karve, o avis- avimi. Nemutuojam! Perbėgusios avys ir karvės yra dedamos į bandos galą.</p>
+            </li>
           </ol>
         )}
       </section>

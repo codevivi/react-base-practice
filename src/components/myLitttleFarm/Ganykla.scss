@@ -1,0 +1,46 @@
+.ganykla {
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 2.5em;
+  background: rgb(86, 168, 14);
+  background: linear-gradient(90deg, rgba(86, 168, 14, 1) 49%, rgba(84, 176, 59, 1) 50%, rgba(86, 168, 14, 1) 50%);
+  border-radius: 10px;
+  display: flex;
+  align-items: baseline;
+  justify-content: stretch;
+  div {
+    position: relative;
+    display: flex;
+    flex: 1;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    span {
+      margin: 1em;
+      font-size: 0.8em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1em;
+      width: 100px;
+      height: 100px;
+      cursor: pointer;
+      &.karve {
+        background-color: rgb(126, 78, 38);
+      }
+      &.avis {
+        background-color: rgb(233, 231, 230);
+        border-radius: 50%;
+        color: #282c34;
+      }
+    }
+
+    h3 {
+      position: absolute;
+      width: 100%;
+      top: -2.5em;
+      text-align: center;
+    }
+  }
+}

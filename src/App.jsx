@@ -7,6 +7,7 @@ import ReactBaseList from "./pages/ReactBaseList";
 import ReactList from "./pages/ReactList";
 import ReactState from "./pages/ReactState";
 import ReactState2 from "./pages/ReactState2";
+import MyLittleFarm from "./pages/MyLittleFarm";
 function App() {
   return (
     <BrowserRouter>
@@ -18,6 +19,7 @@ function App() {
           <Route path="react-list" element={<ReactList />} />
           <Route path="react-state" element={<ReactState />} />
           <Route path="react-state2" element={<ReactState2 />} />
+          <Route path="react-state3" element={<MyLittleFarm />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
