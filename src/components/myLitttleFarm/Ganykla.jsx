@@ -1,11 +1,18 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Button from "../Button/Button";
 import "./Ganykla.scss";
 import { rand7digits, randBetween } from "../../helpers/rand";
 import Animal from "./Animal";
 export default function Ganykla() {
-  const [karves, setKarves] = useState(JSON.parse(localStorage.getItem("karves")) || []);
-  const [avys, setAvys] = useState(JSON.parse(localStorage.getItem("avys")) || []);
+  //   const [karves, setKarves] = useState(JSON.parse(localStorage.getItem("karves")) || []);
+  //   const [avys, setAvys] = useState(JSON.parse(localStorage.getItem("avys")) || []);
+  const [karves, setKarves] = useState([]);
+  const [avys, setAvys] = useState([]);
+
+  useEffect(() => {
+    setKarves(JSON.parse(localStorage?.getItem("karves")) || []);
+    setAvys(JSON.parse(localStorage?.getItem("avys")) || []);
+  }, []);
 
   function initAnimals() {
     setAvys(
