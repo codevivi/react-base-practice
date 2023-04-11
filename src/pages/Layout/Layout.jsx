@@ -44,6 +44,11 @@ const Layout = () => {
                   My Little Farm
                 </Link>
               </li>
+              <li>
+                <Link className="link" to="/react-forms">
+                  React Forms
+                </Link>
+              </li>
             </ul>
           </nav>
         </div>

@@ -1,0 +1,25 @@
+.reactForm2 {
+  input {
+    margin: 1em;
+    font-size: 1em;
+    border: none;
+    padding: 0.5em;
+    border-radius: 5px;
+  }
+  input[type="number"] {
+    width: 6em;
+  }
+}
+.katinukai {
+  margin: 2em 1em;
+  p {
+    margin: 1em;
+    span {
+      color: orange;
+      font-weight: bold;
+    }
+  }
+}
+.katinukas {
+  font-size: 1.5em;
+}

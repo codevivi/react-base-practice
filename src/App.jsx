@@ -1,4 +1,4 @@
-import { BrowserRouter, HashRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Layout from "./pages/Layout/Layout";
 import NotFound from "./pages/NotFound";
 import ReactBaseTasks from "./pages/ReactBase";
@@ -8,9 +8,9 @@ import ReactList from "./pages/ReactList";
 import ReactState from "./pages/ReactState";
 import ReactState2 from "./pages/ReactState2";
 import MyLittleFarm from "./pages/MyLittleFarm";
+import ReactForms from "./pages/ReactForms";
 function App() {
   return (
-    // <BrowserRouter>
     <HashRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
@@ -21,11 +21,11 @@ function App() {
           <Route path="react-state" element={<ReactState />} />
           <Route path="react-state2" element={<ReactState2 />} />
           <Route path="react-state3" element={<MyLittleFarm />} />
+          <Route path="react-forms" element={<ReactForms />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </HashRouter>
-    // </BrowserRouter>
   );
 }
 
