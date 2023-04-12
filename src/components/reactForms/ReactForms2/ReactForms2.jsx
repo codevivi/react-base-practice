@@ -23,15 +23,15 @@ export default function ReactForms2() {
   }
   return (
     <>
-      <h2>Užduotis #1</h2>
+      <h2>Užduotis #2</h2>
       <form className="reactForm2" onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Katinuko vardas: </label>
-          <input id="name" name="name" type="text" />
+          <input id="name" name="name" required type="text" />
         </div>
         <div>
           <label htmlFor="weight">Katinuko svoris gramais: </label>
-          <input id="weight" name="weight" type="number" min="100" step="50" max="5000" />
+          <input id="weight" name="weight" required type="number" min="100" step="50" max="5000" />
         </div>
         <Button text="Pridėti katinuką" />
       </form>
