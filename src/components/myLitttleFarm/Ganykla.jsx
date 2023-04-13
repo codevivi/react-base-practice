@@ -4,53 +4,41 @@ import "./Ganykla.scss";
 import { rand7digits, randBetween } from "../../helpers/rand";
 import Animal from "./Animal";
 export default function Ganykla() {
-  //   const [karves, setKarves] = useState(JSON.parse(localStorage.getItem("karves")) || []);
-  //   const [avys, setAvys] = useState(JSON.parse(localStorage.getItem("avys")) || []);
-  const [karves, setKarves] = useState([]);
-  const [avys, setAvys] = useState([]);
+  const [karves, setKarves] = useState(null);
+  const [avys, setAvys] = useState(null);
 
   useEffect(() => {
     setKarves(JSON.parse(localStorage?.getItem("karves")) || []);
     setAvys(JSON.parse(localStorage?.getItem("avys")) || []);
   }, []);
 
-  function initAnimals() {
-    setAvys(
-      save(
-        "avys",
-        [...Array(randBetween(5, 20))].map((_) => "A" + rand7digits())
-      )
-    );
-    setKarves(
-      save(
-        "karves",
-        [...Array(randBetween(5, 20))].map((_) => "K" + rand7digits())
-      )
-    );
-  }
-  function move(id, banda) {
-    if (banda === "avys") {
-      setAvys((animals) =>
-        save(
-          "avys",
-          animals.filter((animal) => animal !== id)
-        )
-      );
-      setKarves((animals) => save("karves", [...animals, id]));
+  useEffect(() => {
+    if (null === karves) {
       return;
     }
-    setKarves((animals) =>
-      save(
-        "karves",
-        animals.filter((animal) => animal !== id)
-      )
-    );
-    setAvys((animals) => save("avys", [...animals, id]));
+    localStorage.setItem("karves", JSON.stringify(karves));
+  }, [karves]);
+
+  useEffect(() => {
+    if (null === avys) {
+      return;
+    }
+    localStorage.setItem("avys", JSON.stringify(avys));
+  }, [avys]);
+
+  function initAnimals() {
+    setAvys([...Array(randBetween(5, 20))].map((_) => "A" + rand7digits()));
+    setKarves([...Array(randBetween(5, 20))].map((_) => "K" + rand7digits()));
   }
 
-  function save(animalName, animals) {
-    localStorage.setItem(animalName, JSON.stringify(animals));
-    return animals;
+  function move(id, banda) {
+    if (banda === "avys") {
+      setAvys((animals) => animals.filter((animal) => animal !== id));
+      setKarves((animals) => [...animals, id]);
+      return;
+    }
+    setKarves((animals) => animals.filter((animal) => animal !== id));
+    setAvys((animals) => [...animals, id]);
   }
 
   return (
@@ -60,13 +48,13 @@ export default function Ganykla() {
       <div className="ganykla">
         <div className="karves">
           <h3>Karvės</h3>
-          {karves.map((animal) => (
+          {karves?.map((animal) => (
             <Animal id={animal} handleClick={() => move(animal, "karves")} />
           ))}
         </div>
         <div className="avys">
           <h3>Avys</h3>
-          {avys.map((animal) => (
+          {avys?.map((animal) => (
             <Animal id={animal} handleClick={() => move(animal, "avys")} />
           ))}
         </div>
